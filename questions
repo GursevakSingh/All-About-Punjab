@@ -1,0 +1,51 @@
+package com.example.a226project;
+
+public class questions {
+    public String mquestions[] = {
+            "Capital Of Punjab?","Total cities in punjab?",
+            "Punjab does not share it’s border with which of the following states?",
+            " Which of the following is an official language of Punjab?",
+            "Punjab means ‘state of five rivers’. Which one of the following river does not flow in Punjab?",
+            "Which is Punjab’s state animal?"};
+    private String mchoices[][]={
+            {"Chandigarh","Patiala","Amritsar","Ludhiana"},
+            {"Ten","Twelve","Eighteen","Twenty"},
+            {"Himachal Pradesh", "Haryana","Rajasthan", "Delhi"},
+            {"Hindi","Punjabi","English","Sanskrit"},
+            { "Sutlej", "Ravi", "Beas", "Ganga"},
+            {"Lion","Blackbuck","Tiger","Deer"}
+    };
+    private String mcurrectanswers[]={
+            "Chandigarh","Twenty","Delhi","Punjabi","Ganga","Blackbuck"
+    };
+    public String getquestions(int a) {
+        String questions= mquestions[a];
+        return  questions;
+    }
+
+    public String getchoice(int a) {
+        String choice = mchoices[a][0];
+        return choice;
+    }
+
+    public String getchoice2(int a) {
+        String choice = mchoices[a][1];
+        return choice;
+    }
+    public String getchoice3(int a) {
+        String choice = mchoices[a][2];
+        return choice;
+    }
+
+    public String getchoice4(int a) {
+        String choice = mchoices[a][3];
+        return choice;
+    }
+    public String getcorrectanswer(int a)
+    {
+        String answer=mcurrectanswers[a];
+        return answer;
+    }
+
+
+}
